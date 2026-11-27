@@ -4,10 +4,10 @@ A lightweight, portable Windows disk cloning, VHDX imaging, and boot/recovery ut
 
 ## Features
 - **Disk-to-Disk Cloning:** Native 4 MB buffered raw sector streaming with live speed (MB/s), ETA, and safe cancellation.
-- **Automated OS Upgrade:** Automatically assigns a fresh GPT/MBR Disk ID, repairs the UEFI bootloader (`bcdboot`), moves the Recovery partition to the end of the drive, and expands the OS partition.
+- **Automated Storage Upgrade Support:** Automatically assigns a fresh GPT/MBR Disk ID, repairs the UEFI bootloader (`bcdboot`), moves the Recovery partition to the end of the drive, and expands the OS partition to account for its expanded storage.
 - **VHDX Imaging:** Back up any physical disk to a mountable `.vhdx` image and restore `.vhdx` images back to bare metal.
-- **Standalone Rescue Tools:** One-click UEFI boot repair and Recovery partition relocation (`reagentc` for live system disks, `robocopy` for secondary drives).
-- **Visual Disk Map:** Color-coded partition layout inspector with built-in safety locks to prevent overwriting the active System Disk.
+- **Standalone Rescue Tool Management:** One-click UEFI boot repair and Recovery partition relocation (`reagentc` for live system disks, `robocopy` for secondary drives): *Not supported in WinRE or WinPE*.
+- **Visual Disk Map:** Color-coded partition layout inspector with built-in safety locks to prevent overwriting the active System Disk. *I am not responsible for ANY accidents or otherwise!*
 
 ## Requirements
 - Windows 10 or Windows 11 (64-bit)
